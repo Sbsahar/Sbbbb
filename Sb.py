@@ -1,4 +1,4 @@
-from telethon import TelegramClient, events, Button, functions
+from telethon import TelegramClient, events, Button, functions  # لا تضيف idle هنا
 from telethon.errors import (
     ApiIdInvalidError,
     PhoneNumberInvalidError,
@@ -1501,7 +1501,16 @@ async def main():
     create_task(reVipTime())
     await client.start()
     await idle()
+async def main():
+    create_task(reStartPosting())
+    create_task(reVipTime())
+    await client.start()
+    
+    # إبقاء البوت قيد التشغيل باستخدام حلقة لا نهائية
+    while True:
+        await asyncio.sleep(1)  # انتظر لمدة ثانية واحدة
 
 if __name__ == "__main__":
     loop.run_until_complete(main())
+
     
