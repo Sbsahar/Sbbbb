@@ -32,6 +32,8 @@ loop = get_event_loop()
 owners = 6177743981  # ايدي الادمن
 owner = 6789179634  # ايدي الاساسي
 own = "@SB_SAHAR"  # يوزرك
+def isOwner(event):
+    return event.sender_id in owners
 
 # تعريف الأزرار في Telethon
 homeMarkup = [
