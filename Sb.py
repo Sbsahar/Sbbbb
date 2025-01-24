@@ -29,9 +29,9 @@ client = TelegramClient(
 loop = get_event_loop()
 
 # المتغيرات العامة
-owners = [000, 000]  # ايدي الادمن
-owner = 6582207402  # ايدي الاساسي
-own = "@K_B_I"  # يوزرك
+owners = 6177743981  # ايدي الادمن
+owner = 6789179634  # ايدي الاساسي
+own = "@SB_SAHAR"  # يوزرك
 
 # تعريف الأزرار في Telethon
 homeMarkup = [
